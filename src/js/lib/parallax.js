@@ -1,21 +1,21 @@
 import {TweenMax, Expo} from 'gsap/TweenMax';
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+const scrollPlugin = ScrollToPlugin;
 
-export default function () {
-/**
- * 慣性スクロール
- */
+export default function() {
+	/**
+	 * 慣性スクロール
+	 */
 	class ScrollSlow {
 		constructor(_scrollTime = 3, _scrollDistance = 6) {
 			this.scrollTime = _scrollTime;
 			this.scrollDistance = _scrollDistance;
-			this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 			this.wheelEvent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		}
 	}
 	function scrollSlowEvent(e) {
 		let delta = e.wheelDelta || e.detail * 40 * -1;
-		let scrollTop = scrollSlow.scrollTop;
+		let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		let finalScroll = scrollTop - delta * scrollSlow.scrollDistance;
 
 		TweenMax.to(window, scrollSlow.scrollTime, {
@@ -23,15 +23,15 @@ export default function () {
 			ease: Expo.easeOut,
 			overwrite: 5,
 		});
-  }
-  const scrollSlow = new ScrollSlow(2, 3);
+	}
+	const scrollSlow = new ScrollSlow(2, 3);
 
-  // イベント
+	// イベント
 	window.addEventListener(scrollSlow.wheelEvent, scrollSlowEvent, {passive: true});
 
-/**
- * Parallax
- */
+	/**
+	 * Parallax
+	 */
 	class Parallax {
 		constructor(_delta = 5, _speed = 1, _item = '.parallaxWrap .parallaxItem') {
 			this.delta = _delta;
@@ -83,10 +83,10 @@ export default function () {
 			});
 			parallax.animeFlag = true;
 		}
-  }
-  const parallax = new Parallax(5, 1, '.parallaxWrap .parallaxItem');
+	}
+	const parallax = new Parallax(5, 1, '.parallaxWrap .parallaxItem');
 
-  // イベント
+	// イベント
 	window.addEventListener('scroll', parallaxEvent, {passive: true});
 	window.addEventListener('DOMContentLoaded', parallaxEvent, {passive: true});
 }
