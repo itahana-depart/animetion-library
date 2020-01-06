@@ -1,5 +1,5 @@
 import {TweenMax, Expo} from 'gsap/TweenMax';
-import 'gsap/ScrollToPlugin';
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 export default function () {
 /**
