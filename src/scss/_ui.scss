@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/*================================================================================
+FileName: _ui.scss
+================================================================================*/
+// UI class
+.content{
+	// padding-bottom: 2rem;
+	&__head{
+    padding: 2rem;
+	}
+	&__body{
+    padding: 3rem 2rem;
+	}
+}
+
+.hero{
+  padding: 10rem 2rem;
+  background: darken($primeColor, 20%);
+  text-align: center;
+  color: #fff;
+  &__item{
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 100%;
+    max-width: 500px;
+    border: #fff 3px solid;
+    color: #fff;
+    text-align: center;
+    h1{
+      color: #fff;
+    }
+  }
+}
+
+.section{
+  width: 100%;
+  max-width: $bpPcMid;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+	&__ttl{
+		margin-bottom: 2rem;
+  }
+	&__body{
+  }
+  &:last-child{
+    padding-bottom: 0;
+  }
+}
+
+.notice{
+  padding: 2rem;
+  background: #efefef;
+  font-size: .8rem;
+}
+
+
+.boxWrap{
+	@include flexBox;
+	.box{
+		width: 20%;
+	}
+}
+.box{
+  margin-top: 1rem;
+}
+.flex{
+  @include flexBox(row, wrap);
+  @include pcSm{
+    @include flexBox;
+  }
+  &.between{
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+.card{
+  width: 100%;
+  padding: 0 1rem 2rem 1rem;
+  @include pcSm{
+    padding: 0 1rem;
+  }
+  &__inner{
+    border: #ccc 1px solid;
+    padding: 1rem;
+  }
+  &__header{
+    padding: 3rem 0;
+    border-bottom: #ccc 1px solid;
+    text-align: center;
+  }
+  &__body{
+    padding: 2rem 1rem;
+    font-size: .8rem;
+  }
+  &__footer{
+    padding-top: 1rem;
+    border-top: #ccc 1px solid;
+    &.right{
+      text-align: right;
+    }
+  }
+}
+
+
+.btn{
+	@include btn;
+}
+.btnW{
+	@include btnW;
+}
+.navBtn{
+	@include flexBox;
+	margin-top: 1rem;
+	a{
+		@include btn;
+		border-right: #fff 1px solid;
+		border-radius: 0;
+		&:first-child{
+			border-radius: 3px 0 0 3px;
+		}
+		&:last-child{
+			border-radius: 0 3px 3px 0;
+		}
+	}
+}
+
+
+
+ul.disc{
+  padding-left: 1.75rem;
+  li{
+    list-style: disc outside;
+    display: list-item;
+    margin-bottom: .5rem;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}

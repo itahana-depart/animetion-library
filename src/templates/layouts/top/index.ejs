@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<%# 静的ページのデータMETA渡し %>
+<%- include('../../includes/assets', {page: page, all:all}); %>
+</head>
+
+<body>
+<% include ../../includes/header %>
+
+<div id="container">
+	<section>
+		<%- include('../../pages/' + page.ejs_dir + page.ejs_file, page); %>
+	</section>
+</div>
+<!-- //#container -->
+
+<% include ../../includes/footer %>
+<% include ../../includes/js %>
+</body>
+</html>

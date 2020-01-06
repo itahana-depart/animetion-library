@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*================================================================================
+FileName: _layout.scss
+================================================================================*/
+body {
+	min-width: 320px;
+}
+
+
+/*
+header
+------------------------------------------------*/
+#header {
+	position: relative;
+	background: $primeColor;
+	padding: 20px;
+  color: #fff;
+  h1{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    span{
+      display: inline-block;
+      padding: 5px 8px;
+      margin-left: 10px;
+      background: #fff;
+      border-radius: 4px;
+      color: $primeColor;
+      font-size: .8rem;
+      line-height: 1;
+    }
+  }
+	.backBtn{
+		position: absolute;
+		top: 14px;
+		right: 14px;
+		@include btnS;
+  }
+}
+
+
+/*
+container
+------------------------------------------------*/
+
+#container {
+	position: relative;
+	width: 100%;
+	font-size: 1rem;
+	padding-right: constant(safe-area-inset-right);
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-left: constant(safe-area-inset-left);
+	padding-top: constant(safe-area-inset-top);
+	padding-right: env(safe-area-inset-right);
+	padding-bottom: env(safe-area-inset-bottom);
+	padding-left: env(safe-area-inset-left);
+	padding-top: env(safe-area-inset-top);
+}
+
+
+/*
+pagetop
+------------------------------------------------*/
+.pageTop {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	padding: 0;
+	a {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		padding: 12px 0;
+		border-radius: 3px;
+		background: $primeColor;
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+
+/*
+footer
+------------------------------------------------*/
+#footer {
+	border-top: #dfdfdf 1px solid;
+	padding: 25px;
+	font-size: 12px;
+	.copyright {
+		text-align: center;
+		color: #999;
+	}
+}

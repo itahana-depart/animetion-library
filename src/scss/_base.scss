@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*================================================================================
+FileName: _base.scss
+================================================================================*/
+html,
+button,
+input,
+select,
+textarea {
+	color: $baseColor;
+}
+*{
+	box-sizing: border-box;
+}
+::-moz-selection {
+	background: $baseLinkColor;
+	text-shadow: none;
+}
+html{
+	overflow-x: hidden;
+}
+body {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow-wrap: break-word;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $baseLineColor;
+	margin: 1em 0;
+	padding: 0;
+}
+img {
+	vertical-align: middle;
+}
+li img {
+	vertical-align: bottom;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize: vertical;
+}
+
+.clearfix{
+	@include clearfix();
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/*
+global
+------------------------------------------------*/
+body,body>div,input,button,textarea,select
+{
+	font-family:$baseFontFamily;
+	line-height:$baseLineHeight;
+	color: $baseColor;
+	letter-spacing: 0.03em;
+}
+
+h1{
+	margin: 0;
+	font-size: 1.75rem;
+  font-weight: 600;
+  color: $primeColor;
+}
+h2{
+	margin: 0;
+	font-size: 1.5rem;
+  font-weight: 500;
+  color: $primeColor;
+}
+h3{
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+h4{
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+}
+h5{
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+a{
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0);
+	@include linkColor($baseLinkColor);
+	&:hover{
+		text-decoration: none;
+	}
+}
+*:focus {
+	outline: none;
+}
+
+
+
+
+:placeholder-shown {
+	opacity: .7;
+}
+::-webkit-input-placeholder {
+	opacity: .7;
+}
+:-moz-placeholder {
+	opacity: .7;
+}
+::-moz-placeholder {
+	opacity: .7;
+}
+:-ms-input-placeholder {
+	opacity: .7;
+}

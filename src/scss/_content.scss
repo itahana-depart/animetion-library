@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*================================================================================
+FileName: _content.scss
+================================================================================*/
+
+// Anime class
+.fadeIn{
+	@include fade(0, 0);
+}
+.fadeInUp{
+	@include fade(0, 100px);
+}
+.fadeInDown{
+	@include fade(0, -100px);
+}
+.fadeInLeft{
+	@include fade(100px, 0);
+}
+.fadeInRight{
+	@include fade(-100px, 0);
+}
+
+.fadeOut{
+	@include fade(0, 0, 1s, ease, 0s, reverse, 1);
+}
+.fadeOutUp{
+	@include fade(0, -100px, 1s, ease, 0s, reverse);
+}
+.fadeOutDown{
+	@include fade(0, 100px, 1s, ease, 0s, reverse);
+}
+.fadeOutLeft{
+	@include fade(-100px, 0, 1s, ease, 0s, reverse);
+}
+.fadeOutRight{
+	@include fade(100px, 0, 1s, ease, 0s, reverse);
+}
+
+
+
+.zoomIn{
+	@include zoom(0, 0, 0.5);
+}
+.zoomInUp{
+	@include zoom(0, 400px, 0.5);
+}
+.zoomInDown{
+	@include zoom(0, -400px, 0.5);
+}
+.zoomInLeft{
+	@include zoom(400px, 0, 0.5);
+}
+.zoomInRight{
+	@include zoom(0, 400px, 0.5);
+}
+
+.zoomOut{
+	@include zoom(0, 0, 0.5, 1s, ease, 0s, reverse, 1);
+}
+.zoomOutUp{
+	@include zoom(0, -400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutDown{
+	@include zoom(0, 400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutLeft{
+	@include zoom(-400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutRight{
+	@include zoom(400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+
+
+
+.zoomFadeIn{
+	@include zoomFade(0, 0, 0.5);
+}
+.zoomFadeInUp{
+	@include zoomFade(0, 400px, 0.5);
+}
+.zoomFadeInDown{
+	@include zoomFade(0, -400px, 0.5);
+}
+.zoomFadeInLeft{
+	@include zoomFade(400px, 0, 0.5);
+}
+.zoomFadeInRight{
+	@include zoomFade(0, 400px, 0.5);
+}
+
+.zoomFadeOut{
+	@include zoomFade(0, 0, 0.5, 1s, ease, 0s, reverse, 1);
+}
+.zoomFadeOutUp{
+	@include zoomFade(0, -400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutDown{
+	@include zoomFade(0, 400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutLeft{
+	@include zoomFade(-400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutRight{
+	@include zoomFade(400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+
+
+
+
+// parallax
+.parallaxWrap {
+	position: relative;
+	min-height: 2000px;
+	overflow: hidden;
+	.parallaxItem {
+		position: absolute;
+		@for $i from 1 through 5 {
+			&:nth-child(#{$i}) {
+				top: calc((200px * (#{$i} - 1)) + 500px);
+				left: calc(640px / 5 * (#{$i} - 1));
+			}
+		}
+	}
+}

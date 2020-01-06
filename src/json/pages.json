@@ -1,0 +1,69 @@
+{
+	"pages": [
+		{
+			"id": "top",
+			"ejs_layout": "layouts/top/index.ejs",
+			"ejs_dir": "top/",
+			"ejs_file": "index",
+			"dist_dir": "",
+			"dist_file": "index",
+			"title": "アニメーションライブラリ｜株式会社DEPART Creative division",
+			"description": "このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。",
+			"keyword": "アニメーション,ライブラリ,DEPART",
+			"ogimage": "assets/img/ogp.jpg",
+			"url": ""
+		},
+		{
+			"id": "css-anime",
+			"ejs_layout": "layouts/under/layout.ejs",
+			"ejs_dir": "css-anime/",
+			"ejs_file": "index",
+			"dist_dir": "/css-anime",
+			"dist_file": "index",
+			"title": "CSSアニメーション｜株式会社DEPART Creative division",
+			"description": "このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。",
+			"keyword": "アニメーション,ライブラリ,DEPART",
+			"ogimage": "assets/img/ogp.jpg",
+			"url": ""
+		},
+		{
+			"id": "scroll",
+			"ejs_layout": "layouts/under/layout.ejs",
+			"ejs_dir": "scroll/",
+			"ejs_file": "index",
+			"dist_dir": "/scroll",
+			"dist_file": "index",
+			"title": "スクロールアニメーション｜株式会社DEPART Creative division",
+			"description": "このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。",
+			"keyword": "アニメーション,ライブラリ,DEPART",
+			"ogimage": "assets/img/ogp.jpg",
+			"url": ""
+		},
+		{
+			"id": "svg",
+			"ejs_layout": "layouts/under/layout.ejs",
+			"ejs_dir": "svg/",
+			"ejs_file": "index",
+			"dist_dir": "/svg",
+			"dist_file": "index",
+			"title": "SVGアニメーション｜株式会社DEPART Creative division",
+			"description": "このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。",
+			"keyword": "アニメーション,ライブラリ,DEPART",
+			"ogimage": "assets/img/ogp.jpg",
+			"url": ""
+		},
+		{
+			"id": "parallax",
+			"ejs_layout": "layouts/under/layout.ejs",
+			"ejs_dir": "parallax/",
+			"ejs_file": "index",
+			"dist_dir": "/parallax",
+			"dist_file": "index",
+			"title": "アニメーションライブラリ｜株式会社DEPART Creative division",
+			"description": "このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。",
+			"keyword": "アニメーション,ライブラリ,DEPART",
+			"ogimage": "assets/img/ogp.jpg",
+			"url": ""
+		}
+	]
+}

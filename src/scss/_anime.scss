@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@mixin keyframes($name: fade, $duration: 1s, $timing-function: ease, $delay: 0s, $iteration-count: 1, $direction: normal, $fill-mode: forwards) {
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-timing-function: $timing-function;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration-count;
+	animation-direction: $direction;
+	animation-fill-mode: $fill-mode;
+}
+
+@mixin fade($x: 0, $y: 0, $t: 1s, $e: ease, $d: 0s, $r: normal, $c: 1) {
+	@include keyframes(fade#{$x}#{$y}#{$r}, $t, $e, $d, $c, $r, forwards);
+	@keyframes fade#{$x}#{$y}#{$r} {
+		0% {
+			opacity:0;
+			transform: translate($x, $y);
+		}
+		100% {
+			opacity:1;
+			transform: translate(0, 0);
+		}
+	}
+}
+
+@mixin zoom($x: 0, $y: 0, $z: 0, $t: 1s, $e: ease, $d: 0s, $r: normal, $c: 1) {
+	@include keyframes(zoom#{$x}#{$y}#{$r}, $t, $e, $d, $c, $r, forwards);
+	@keyframes zoom#{$x}#{$y}#{$r} {
+		0% {
+			transform: scale($z) translate($x, $y);
+		}
+		100% {
+			transform: scale(1.0) translate(0, 0);
+		}
+	}
+}
+
+@mixin zoomFade($x: 0, $y: 0, $z: 0, $t: 1s, $e: ease, $d: 0s, $r: normal, $c: 1) {
+	@include keyframes(zoomFade#{$x}#{$y}#{$r}, $t, $e, $d, $c, $r, forwards);
+	@keyframes zoomFade#{$x}#{$y}#{$r} {
+		0% {
+			opacity: 0;
+			transform: scale($z) translate($x, $y);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1.0) translate(0, 0);
+		}
+	}
+}

@@ -1,0 +1,48 @@
+{
+  "rules": {
+		"prettier/prettier": [
+      'error',
+      {
+        "useTabs": true,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": false,
+				"jsxBracketSameLine": false,
+				"printWidth": 400
+      }
+		],
+		"no-console": "off",
+    "indent": [
+      "error",
+      "tab"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ]
+	},
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  }
+}

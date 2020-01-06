@@ -1,0 +1,121 @@
+@charset "utf-8";
+// グリッドシステムを入れる場合はbootstrapのgridなどをimportすると良いかもです。
+@import "_ress.min";
+@import "_setting";
+@import "_mixin";
+@import "_base";
+@import "_layout";
+@import "_ui";
+@import "_anime";
+
+
+// page class
+#css {
+	.box{
+		margin-top: 0;
+		padding: 1rem;
+		border-top: #ccc 1px solid;
+		text-align: center;
+	}
+}
+
+// Anime class
+.fadeIn{
+	@include fade(0, 0);
+}
+.fadeInUp{
+	@include fade(0, 100px);
+}
+.fadeInDown{
+	@include fade(0, -100px);
+}
+.fadeInLeft{
+	@include fade(100px, 0);
+}
+.fadeInRight{
+	@include fade(-100px, 0);
+}
+
+.fadeOut{
+	@include fade(0, 0, 1s, ease, 0s, reverse, 1);
+}
+.fadeOutUp{
+	@include fade(0, -100px, 1s, ease, 0s, reverse);
+}
+.fadeOutDown{
+	@include fade(0, 100px, 1s, ease, 0s, reverse);
+}
+.fadeOutLeft{
+	@include fade(-100px, 0, 1s, ease, 0s, reverse);
+}
+.fadeOutRight{
+	@include fade(100px, 0, 1s, ease, 0s, reverse);
+}
+
+
+
+.zoomIn{
+	@include zoom(0, 0, 0.5);
+}
+.zoomInUp{
+	@include zoom(0, 400px, 0.5);
+}
+.zoomInDown{
+	@include zoom(0, -400px, 0.5);
+}
+.zoomInLeft{
+	@include zoom(400px, 0, 0.5);
+}
+.zoomInRight{
+	@include zoom(0, 400px, 0.5);
+}
+
+.zoomOut{
+	@include zoom(0, 0, 0.5, 1s, ease, 0s, reverse, 1);
+}
+.zoomOutUp{
+	@include zoom(0, -400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutDown{
+	@include zoom(0, 400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutLeft{
+	@include zoom(-400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomOutRight{
+	@include zoom(400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+
+
+
+.zoomFadeIn{
+	@include zoomFade(0, 0, 0.5);
+}
+.zoomFadeInUp{
+	@include zoomFade(0, 400px, 0.5);
+}
+.zoomFadeInDown{
+	@include zoomFade(0, -400px, 0.5);
+}
+.zoomFadeInLeft{
+	@include zoomFade(400px, 0, 0.5);
+}
+.zoomFadeInRight{
+	@include zoomFade(0, 400px, 0.5);
+}
+
+.zoomFadeOut{
+	@include zoomFade(0, 0, 0.5, 1s, ease, 0s, reverse, 1);
+}
+.zoomFadeOutUp{
+	@include zoomFade(0, -400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutDown{
+	@include zoomFade(0, 400px, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutLeft{
+	@include zoomFade(-400px, 0, 0.5, 1s, ease, 0s, reverse);
+}
+.zoomFadeOutRight{
+	@include zoomFade(400px, 0, 0.5, 1s, ease, 0s, reverse);
+}

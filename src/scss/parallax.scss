@@ -1,0 +1,42 @@
+@charset "utf-8";
+// グリッドシステムを入れる場合はbootstrapのgridなどをimportすると良いかもです。
+@import "_ress.min";
+@import "_setting";
+@import "_mixin";
+@import "_base";
+@import "_layout";
+@import "_ui";
+@import "_anime";
+
+
+// page class
+#parallax{
+	padding: 2rem;
+	min-height: 2000px;
+	.target{
+		padding: 4rem;
+		background: #ccc;
+	}
+	.content{
+		&__body{
+			margin-top: 0;
+		}
+	}
+}
+
+
+// parallax
+.parallaxWrap {
+	position: relative;
+	min-height: 2000px;
+	overflow: hidden;
+	.parallaxItem {
+		position: absolute;
+		@for $i from 1 through 5 {
+			&:nth-child(#{$i}) {
+				top: calc((200px * (#{$i} - 1)) + 500px);
+				left: calc(640px / 5 * (#{$i} - 1));
+			}
+		}
+	}
+}

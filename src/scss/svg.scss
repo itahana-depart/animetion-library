@@ -1,0 +1,26 @@
+@charset "utf-8";
+// グリッドシステムを入れる場合はbootstrapのgridなどをimportすると良いかもです。
+@import "_ress.min";
+@import "_setting";
+@import "_mixin";
+@import "_base";
+@import "_layout";
+@import "_ui";
+@import "_anime";
+
+
+// page class
+#svg {
+	.box{
+		width: 600px;
+		margin: 0 auto;
+		padding: 1rem;
+		text-align: center;
+	}
+	#svg-anime{
+		opacity: 0;
+		&.active{
+			opacity: 1;
+		}
+	}
+}

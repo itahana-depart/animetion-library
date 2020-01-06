@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+// font
+$baseFont: 14;
+$baseLineHeight: 1.8;
+$baseColor: #444;
+$baseLinkColor: #333;
+$baseLineColor: #ccc;
+
+$baseFontFamily : "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+$fontGothic : "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+$fontMincho : 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+
+// width
+$baseWidth: 980px;
+$baseWidthWide: 1200px;
+$baseWidthInner: 1080px;
+
+// スマホ画面基準サイズ
+$spBaseWidth: 750px;
+
+// point
+$bpPcBig: 1440px;
+$bpPcMid: 1280px;
+$bpPcSm: 1024px;
+$bpTabletL: 979px;
+$bpTabletP: 768px;
+$bpSphoneP: 480px;
+$bpSphone7: 375px;
+$bpSphoneSE: 320px;
+
+$primeColor: #23CA98;

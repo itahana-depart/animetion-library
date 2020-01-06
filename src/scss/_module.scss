@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*================================================================================
+FileName: _module.scss
+margin、paddingなどのルールを入れる場合はここに記述
+================================================================================*/
+
+.clearfix {
+	@include clearfix();
+}
+
+.spOnly {
+	display: none !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: block !important;
+	}
+}
+
+.spOnlyIn {
+	display: none !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: inline-block !important;
+	}
+}
+
+.spOnlyTb {
+	display: none !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: table !important;
+	}
+}
+
+.pcOnly {
+	display: block !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: none !important;
+	}
+}
+
+.pcOnlyIn {
+	display: inline-block !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: none !important;
+	}
+}
+
+.pcOnlyTb {
+	display: table !important;
+	@media only screen and (max-width: $bpPcSm) {
+		display: none !important;
+	}
+}

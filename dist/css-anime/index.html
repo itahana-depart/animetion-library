@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="https://www.example.jp/">
+<meta name="twitter:title" content="CSSアニメーション｜株式会社DEPART Creative division">
+<meta name="twitter:description" content="このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。">
+<meta name="twitter:image:src" content="https://www.example.jp/assets/img/ogp.jpg">
+
+<meta property="og:title" content="CSSアニメーション｜株式会社DEPART Creative division">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.example.jp/">
+<meta property="og:site_name" content="CSSアニメーション｜株式会社DEPART Creative division">
+<meta property="og:description" content="このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://www.example.jp/assets/img/ogp.jpg">
+
+<title>CSSアニメーション｜株式会社DEPART Creative division</title>
+<meta name="description" content="このアニメーションライブラリは株式会社DEPART Creative divisionが制作・活用しているものです。">
+<meta name="keywords" content="アニメーション,ライブラリ,DEPART">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/assets/css/css-anime.min.css">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-XXXXXXXX');
+</script>
+
+
+</head>
+
+<body>
+
+<div id="header">
+	<header>
+		<h1>Animation Library <span>α 0.1</span></h1>
+		<a href="/" class="backBtn">戻る</a>
+	</header>
+</div>
+<!-- //#header -->
+
+
+
+
+<div id="container">
+	<section>
+		<div id="css">
+	<div class="content">
+		<div class="content__head">
+			<h1>CSS アニメーション</h1>
+      <p>CSSアニメーションライブラリなどでよくある動きなどを用意しています。<br>基本構造的にはmixinになっていますので、オリジナルのアニメーションが自作できます。</p>
+      <p>一度きりなのでリロードして確認してください。</p>
+			<nav class="navBtn">
+				<a href="#Fade">Fade</a>
+				<a href="#Zoom">Zoom</a>
+				<a href="#ZoomFade">ZoomFade</a>
+			</nav>
+		</div>
+
+		<div class="content__body">
+			<div class="content__ttl">
+				<h2 id="Fade">Fade</h2>
+				<p>Mixinで <em>fade(x, y, [option])</em> の様に指定が可能なので、動き自体は自由度がある。</p>
+			</div>
+			<div class="boxWrap">
+				<div class="box">
+					<p class="fadeIn"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeIn"></p>
+				</div>
+				<div class="box">
+					<p class="fadeInUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeInUp"></p>
+				</div>
+				<div class="box">
+					<p class="fadeInDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeInDown"></p>
+				</div>
+				<div class="box">
+					<p class="fadeInLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeInLeft"></p>
+				</div>
+				<div class="box">
+					<p class="fadeInRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeInRight"></p>
+				</div>
+			</div>
+
+			<div class="boxWrap">
+				<div class="box">
+					<p class="fadeOut"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeOut"></p>
+				</div>
+				<div class="box">
+					<p class="fadeOutUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeOutUp"></p>
+				</div>
+				<div class="box">
+					<p class="fadeOutDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeOutDown"></p>
+				</div>
+				<div class="box">
+					<p class="fadeOutLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeOutLeft"></p>
+				</div>
+				<div class="box">
+					<p class="fadeOutRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=fadeOutRight"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__body">
+			<div class="content__ttl">
+				<h2 id="Zoom">Zoom</h2>
+				<p>Mixinで <em>Zoom(x, y, scale,[option])</em> の様に指定が可能なので、動き自体は自由度がある。</p>
+			</div>
+			<div class="boxWrap">
+				<div class="box">
+					<p class="zoomIn"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomIn"></p>
+				</div>
+				<div class="box">
+					<p class="zoomInUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomInUp"></p>
+				</div>
+				<div class="box">
+					<p class="zoomInDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomInDown"></p>
+				</div>
+				<div class="box">
+					<p class="zoomInLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomInLeft"></p>
+				</div>
+				<div class="box">
+					<p class="zoomInRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomInRight"></p>
+				</div>
+			</div>
+
+			<div class="boxWrap">
+				<div class="box">
+					<p class="zoomOut"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomOut"></p>
+				</div>
+				<div class="box">
+					<p class="zoomOutUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomOutUp"></p>
+				</div>
+				<div class="box">
+					<p class="zoomOutDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomOutDown"></p>
+				</div>
+				<div class="box">
+					<p class="zoomOutLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomOutLeft"></p>
+				</div>
+				<div class="box">
+					<p class="zoomOutRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomOutRight"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__body">
+			<div class="content__ttl">
+				<h2 id="ZoomFade">ZoomFade</h2>
+				<p>Mixinで <em>ZoomFade(x, y, scale,[option])</em> の様に指定が可能なので、動き自体は自由度がある。</p>
+			</div>
+			<div class="boxWrap">
+				<div class="box">
+					<p class="zoomFadeIn"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeIn"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeInUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeInUp"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeInDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeInDown"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeInLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeInLeft"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeInRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeInRight"></p>
+				</div>
+			</div>
+
+			<div class="boxWrap">
+				<div class="box">
+					<p class="zoomFadeOut"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeOut"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeOutUp"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeOutUp"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeOutDown"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeOutDown"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeOutLeft"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeOutLeft"></p>
+				</div>
+				<div class="box">
+					<p class="zoomFadeOutRight"><img src="https://placehold.jp/18/637B99/ffffff/200x120.png?text=zoomFadeOutRight"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+	</section>
+</div>
+<!-- //#container -->
+
+<div class="pageTop">
+	<a href="#">↑</a>
+</div>
+
+<div id="footer">
+	<footer>
+		<p class="copyright">@DEPART</p>
+	</footer>
+</div>
+<!-- //#footer -->
+
+
+
+
+
+
+</body>
+</html>

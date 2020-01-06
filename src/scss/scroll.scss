@@ -1,0 +1,27 @@
+@charset "utf-8";
+// グリッドシステムを入れる場合はbootstrapのgridなどをimportすると良いかもです。
+@import "_ress.min";
+@import "_setting";
+@import "_mixin";
+@import "_base";
+@import "_layout";
+@import "_ui";
+@import "_anime";
+
+
+// page class
+#scroll {
+	padding: 2rem;
+	.target{
+		padding: 1rem;
+		margin-top: 2000px;
+		background: #ccc;
+	}
+
+	.target {
+		opacity: 0;
+		&.anime-run {
+			@include fade(0, 100px);
+		}
+	}
+}

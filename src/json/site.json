@@ -1,0 +1,8 @@
+{
+  "url": "https://www.example.jp/",
+  "faviconPath": "/favicon.ico",
+  "commomCssDistPath": "/assets/css/",
+	"commomCssPath": "/assets/css/common.min.css",
+	"commomCssDevPath":  "/assets/css/common.css",
+	"gaId": "UA-XXXXXXXX"
+}

@@ -1,0 +1,34 @@
+<% if (page.id) {%>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="<%- site.url %><%- page.url %>">
+<meta name="twitter:title" content="<%- page.title %>">
+<meta name="twitter:description" content="<%- page.description %>">
+<meta name="twitter:image:src" content="<%- site.url %><%- page.ogimage %>">
+
+<meta property="og:title" content="<%- page.title %>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="<%- site.url %><%- page.url %>">
+<meta property="og:site_name" content="<%- page.title %>">
+<meta property="og:description" content="<%- page.description %>">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="<%- site.url %><%- page.ogimage %>">
+
+<title><%- page.title %></title>
+<meta name="description" content="<%- page.description %>">
+<meta name="keywords" content="<%- page.keyword %>">
+<% } else { %>
+<% } %>
+<link rel="shortcut icon" href="<%- site.faviconPath %>">
+<link rel="stylesheet" href="<%- site.commomCssDistPath %><%- page.id %>.min.css">
+
+
+<% if (site.gaId) { %>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%- site.gaId %>"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '<%- site.gaId %>');
+</script>
+<% } %>
